@@ -1,0 +1,36 @@
+\mode<presentation>
+
+% Settings
+\colorlet{sharky_main}{DodgerBlue3!80}
+\colorlet{sharky_secondary}{white}
+\definecolor{sharky_black}{RGB}{43,40,40}
+
+\setbeamercolor{section in head/foot}{fg=white, bg=sharky_main}
+\setbeamercolor{frametitle}{fg=white, bg=sharky_main}
+\setbeamercolor{title page top}{fg=sharky_secondary, bg=sharky_main}
+\setbeamercolor{title page bottom}{fg=sharky_black, bg=sharky_secondary}
+
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamerfont{title}{size=\Huge, series=\bfseries}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\LARGE, series=\bfseries}
+\setbeamerfont{date}{size=\small}
+
+\newdimen\sharky@frametitlesep
+\sharky@frametitlesep=1.5ex
+\newdimen\sharky@footbarsep
+\sharky@footbarsep=1ex
+
+% disable navigation
+%\setbeamertemplate{navigation symbols}{}
+
+\def\maketitle{%
+  \ifbeamer@inframe
+    \titlepage
+  \else
+    \frame[plain]{\titlepage}
+  \fi
+}
+
+\mode
+<all>

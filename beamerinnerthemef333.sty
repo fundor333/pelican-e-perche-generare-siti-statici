@@ -1,0 +1,19 @@
+\mode<presentation>
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip%
+    \usebeamerfont{frametitle}%
+    \begin{beamercolorbox}[wd=\paperwidth,sep=\sharky@frametitlesep]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle%
+    \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+    \nointerlineskip%
+    \usebeamerfont{frametitle}%
+    \begin{beamercolorbox}[wd=\paperwidth, sep=\sharky@footbarsep]{section in head/foot}
+        \hfill\scriptsize\insertframenumber/\inserttotalframenumber%
+    \end{beamercolorbox}
+}
+
+\mode
+<all>

@@ -1,0 +1,19 @@
+\mode<presentation>
+% custom draw the title page above
+\setbeamertemplate{title page}{%
+    \begin{beamercolorbox}[wd=\paperwidth, ht=0.5\paperheight, center, sep=0pt]{title page top}
+        \usebeamerfont{title}\inserttitle\par
+        \vspace{0.5em}%
+        \usebeamerfont{subtitle}\insertsubtitle\par
+        \vspace{1em}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=\paperwidth, ht=0.5\paperheight, center]{title page bottom}
+    \vbox to 0.5\paperheight{%
+        \vfil%
+        \usebeamerfont{author}\insertauthor\par%
+        \vspace{0.5em}%
+        \usebeamerfont{date}\insertdate\par%
+        \vfil%
+    }%
+    \end{beamercolorbox}
+}
