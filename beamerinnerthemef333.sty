@@ -4,16 +4,23 @@
     \usebeamerfont{frametitle}%
     \begin{beamercolorbox}[wd=\paperwidth,sep=\sharky@frametitlesep]{frametitle}
         \usebeamerfont{frametitle}\insertframetitle%
-    \end{beamercolorbox}
+	    \hrule
+    	\vspace{0.2cm}
+    	\usebeamerfont{framesubtitle}\insertframesubtitle%
+    \end{beamercolorbox}  
 }
 
 \setbeamertemplate{footline}{
-    \nointerlineskip%
-    \usebeamerfont{frametitle}%
-    \begin{beamercolorbox}[wd=\paperwidth, sep=\sharky@footbarsep]{section in head/foot}
-        \hfill\scriptsize\insertframenumber/\inserttotalframenumber%
-    \end{beamercolorbox}
+	\leavevmode%
+	\begin{beamercolorbox}[wd=.33\paperwidth,left,ht=2.5ex,dp=1.5ex,rightskip=4pt plus 1pt, leftskip=4pt]{section in head/foot}
+		\usebeamercolor[fg]{section in foot/head}\insertshorttitle     
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.33\paperwidth,center,ht=2.5ex,dp=1.5ex]{section in head/foot}
+		\usebeamercolor[fg]{section in foot/head}
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.34\paperwidth,right,ht=2.5ex,dp=1.5ex,leftskip=4pt plus 1pt,rightskip=4pt plus 1pt]{section in head/foot}
+		\usebeamercolor[fg]{section in foot/head}\hfill\insertframenumber/\inserttotalframenumber
+	\end{beamercolorbox}%
 }
-
 \mode
 <all>
