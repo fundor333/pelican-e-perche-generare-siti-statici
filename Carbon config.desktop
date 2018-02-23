@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Collegamento a Carbon
+Type=Link
+URL=https://carbon.now.sh/?bg=rgba(255,255,255,1)&t=dracula&l=markdown&ds=false&wc=true&wa=true&pv=48px&ph=32px&ln=false&code=Title%253A%2520Post%2520per%2520il%2520Pycon%250ADate%253A%25202018-04-20%252012%253A41%250AAuthor%253A%2520Fundor333%250ACategory%253A%2520Esempio%250ASlug%253A%2520post-per-il-pycon%250ATags%253A%2520pelican%252C%2520post%252C%2520pycon%250AStatus%253A%2520published%250A%250ACorpo%2520dell%2520post%2520scritto%2520in%2520un%2520itagliano%2520corrretto
+Icon=text-html
+Name[it]=Carbon config
