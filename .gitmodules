@@ -1,0 +1,6 @@
+[submodule "example/theme/pelican-blue"]
+	path = example/theme/pelican-blue
+	url = https://github.com/Parbhat/pelican-blue.git
+[submodule "example/plugins/ipynb"]
+	path = example/plugins/ipynb
+	url = git://github.com/danielfrg/pelican-ipynb.git
