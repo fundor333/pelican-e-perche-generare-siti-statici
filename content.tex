@@ -2,6 +2,7 @@
 
 \title{Pelican e perchè generare\\ siti statici}
 \subtitle{senza farsi del male}
+\date{20 Aprile 2018}
 \author{Matteo Scarpa \\ @fundor333}
 \institute{Pycon 9}
 
@@ -35,24 +36,36 @@
 
 \begin{frame}
 	\frametitle{Dizionario}
-	\begin{itemize}
-		\item \textbf{Python}: Python 3.x
-		\item \textbf{Legacy Python}: Python 2.7.x
-		\item \textbf{CSM}: Content Management System
-		\item \textbf{Sito}: Quello che voglio ottenere
-		\item \textbf{Utente}: Utilizzatore del sito e fonte dei problemi
-	\end{itemize}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\begin{center}
+			\includegraphics[scale=0.15]{img/octocats/pythocat.png}
+		\end{center}
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Python}: Python 3.x
+			\item \textbf{Legacy Python}: Python 2.7.x
+			\item \textbf{CSM}: Content Management System
+			\item \textbf{Sito}: Quello che voglio ottenere
+			\item \textbf{Visitatore}: Utilizzatore del sito e fonte dei problemi
+		\end{itemize}
+	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{<Inserisci nome del CMS>}
 	\framesubtitle{Componenti di base}
-	\begin{itemize}
-		\item<2-> Software lato server
-		\item<3-> Database con i contenuti
-		\item<4-> Backend accessibile via account/password
-		\item<5-> Plugin per funzionalità
-	\end{itemize}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item Software lato server
+			\item Database con i contenuti
+			\item Backend accessibile via account/password
+			\item Plugin per funzionalità
+		\end{itemize}
+		\column{0.5\textwidth}
+		\includegraphics[scale=0.17]{img/octocats/drupalcat.jpg}
+	\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -60,22 +73,20 @@
 	\begin{columns}
 		\column{0.5\textwidth}
 		\begin{center}
-				\textbf{Vantaggi}
+			\textbf{Vantaggi}
 		\end{center}
 		\begin{itemize}
-			\item<2-> Possibile aggiornare sito da internet
-			\item<3-> Solitamente semplice da usare
-			\item<4-> Estendibile attraverso plugins
+			\item Possibile aggiornare sito da internet
+			\item Estendibile attraverso plugins
 		\end{itemize}
 
 		\column{0.5\textwidth}
 		\begin{center}
-		\textbf{Svantaggi}
+			\textbf{Svantaggi}
 		\end{center}
 		\begin{itemize}
-			\item<2-> Soggetto a password fragili
-			\item<3-> Più è conosciuto più è sotto attacco
-			\item<4-> Da mantenere aggiornato per evitare bug o buchi
+			\item Soggetto a password fragili
+			\item Da mantenere aggiornato per evitare bug o buchi
 		\end{itemize}
 
 	\end{columns}
@@ -84,7 +95,7 @@
 \begin{frame}
 	\frametitle{Static Site Generator}
 	\begin{center}
-	\includegraphics[scale=0.2]{img/html}
+		\includegraphics[scale=0.2]{img/html}
 	\end{center}
 \end{frame}
 
@@ -93,11 +104,11 @@
 	\begin{columns}
 		\column{0.5\textwidth}
 		\begin{center}
-		\includegraphics[scale=0.2]{img/pelican_logo}
+			\includegraphics[scale=0.2]{img/pelican_logo}
 		\end{center}
 		\column{0.5\textwidth}
 		\begin{center}
-		\qrcode[height=1in]{http://docs.getpelican.com/en/stable/}
+			\qrcode[height=1in]{http://docs.getpelican.com/en/stable/}
 		\end{center}
 	\end{columns}
 \end{frame}
@@ -105,27 +116,54 @@
 \begin{frame}
 	\frametitle{Le funzionalità di Pelican}
 	\begin{center}
-	\includegraphics[scale=0.5]{img/pelican_stuff}
-	\end{center}		
-\end{frame}
-
-\begin{frame}
-  \frametitle{Come iniziare con Pelican}
-		\begin{center}
-			\includegraphics[scale=0.2]{img/quickstart.png}
-		\end{center}  
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Post di Pelican}
-		\begin{center}
-			\includegraphics[scale=0.2]{img/post.png}
-		\end{center}  
+		\includegraphics[scale=0.5]{img/pelican_stuff}
+	\end{center}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Hack it!}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\begin{itemize}
+			\item<1-> Struttura il tuo tema con Jinja2
+			\item<2-> Struttura il tuo contenuto come preferisci
+			\item<3-> Estendi le funzionalità
+		\end{itemize}
+		\column{0.5\textwidth}
+		\begin{center}
+			\includegraphics[scale=1]{img/jinja.png}
+		\end{center}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Come iniziare con Pelican}
+	\begin{center}
+		\includegraphics[scale=0.2]{img/quickstart.png}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Post di Pelican}
+	\begin{center}
+		\includegraphics[scale=0.2]{img/post.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Version Controll}
+	\begin{center}
+		\includegraphics[scale=0.2]{img/versioncontroll.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Pubblicazione}
+	\begin{center}
+		\includegraphics[scale=0.32]{img/WordArt.png}
+	\end{center}
 \end{frame}
 
 \begin{frame}
